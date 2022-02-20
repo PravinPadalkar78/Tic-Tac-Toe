@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Karla:ital@1&family=Permanent+Marker&family=Roboto+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #404045;
+    color: white;
+    height: 45px;
+    font-size: 25px;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+}
+nav ul {
+    list-style-type: none;
+}
+.gamecontainer{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Karla', sans-serif;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    background-color: rgb(230, 210, 230);
+}
+.gameInfo{
+   
+    font-family: 'Karla', sans-serif;
+}
+.imgbox{
+    display: none;
+}
