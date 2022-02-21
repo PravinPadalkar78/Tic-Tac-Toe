@@ -1,5 +1,5 @@
 console.log("Welcome to Tic Tac Toe")
-let music = new Audio("music.mp3")
+let music = new Audio("BKMusic.mp3")
 let audioTurn = new Audio("ting.mp3")
 let gameover = new Audio("gameover.mp3")
 let turn = "X"
@@ -28,14 +28,13 @@ const checkWin = ()=>{
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
             isgameover = true
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px";
-            document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`
-            document.querySelector(".line").style.width = "20vw";
+           
         }
     })
 }
 
 // Game Logic
-// music.play()
+//music.play();
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
     let boxtext = element.querySelector('.boxtext');
@@ -60,7 +59,6 @@ reset.addEventListener('click', ()=>{
     });
     turn = "X"; 
     isgameover = false
-    document.querySelector(".line").style.width = "0vw";
     document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
     document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
 })
